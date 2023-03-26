@@ -3,8 +3,12 @@ import ReactDOM from "react-dom/client";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const App = () => {
-  const minValue = 5;
-  return <input type="number" min={minValue} />;
+  return (
+    <div>
+      <textarea autoFocus={true} /> <br />
+      <input type="number" min={5} style={{ color: "blue" }} />
+    </div>
+  );
 };
 root.render(
   <React.StrictMode>
