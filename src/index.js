@@ -5,7 +5,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 const App = () => {
   return (
     <div>
-      <textarea autoFocus={true} /> <br />
+      <textarea autoFocus={true} spellCheck={true} /> <br />
       <input type="number" min={5} style={{ color: "blue" }} />
     </div>
   );
