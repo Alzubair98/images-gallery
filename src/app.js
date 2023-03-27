@@ -4,8 +4,10 @@ import ProfileCard from "./ProfileCard";
 const App = () => {
   return (
     <div>
-      <h1>Hi there!</h1>
-      <ProfileCard />
+      <div>Persoal Digita Assistats</div>
+      <ProfileCard title="Alexa" handle="@Alexa" />
+      <ProfileCard title="Cortana" handle="@Cortana" />
+      <ProfileCard title="Siri" handle="@Siri" />
     </div>
   );
 };

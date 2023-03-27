@@ -1,7 +1,14 @@
 import React from "react";
 
-const ProfileCard = () => {
-  return <div>profile card</div>;
+const ProfileCard = (props) => {
+  const { title, handle } = props;
+
+  return (
+    <>
+      <div>Title is {title} </div>
+      <div>Hadle is {handle}</div>
+    </>
+  );
 };
 
 export default ProfileCard;
