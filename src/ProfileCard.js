@@ -16,6 +16,7 @@ const ProfileCard = ({ title, handle, image, description }) => {
           <p className="title is-4">Title is {title} </p>
           <p className="subtitle is-6">Handle is {handle}</p>
         </div>
+        <div className="content">{description}</div>
       </div>
     </div>
   );
