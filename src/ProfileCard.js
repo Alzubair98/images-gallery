@@ -7,7 +7,7 @@ const ProfileCard = ({ title, handle, image }) => {
     <>
       <img src={image} alt="images" />
       <div>Title is {title} </div>
-      <div>Hadle is {handle}</div>
+      <div>Handle is {handle}</div>
     </>
   );
 };
