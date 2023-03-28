@@ -1,6 +1,6 @@
 import React from "react";
 import "bulma/css/bulma.css";
-const ProfileCard = ({ title, handle, image }) => {
+const ProfileCard = ({ title, handle, image, description }) => {
   //   const { title, handle } = props;
 
   return (
