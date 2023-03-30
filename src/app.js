@@ -4,7 +4,8 @@ import "bulma/css/bulma.css";
 const App = () => {
   return (
     <div>
-      <h1>hello there</h1>
+      <button className="button"> Add Animal</button>
+      <p>Animal to show</p>
     </div>
   );
 };
