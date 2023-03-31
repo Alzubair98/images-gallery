@@ -6,6 +6,7 @@ import dog from "./svg/dog.svg";
 import gator from "./svg/gator.svg";
 import heart from "./svg/heart.svg";
 import horse from "./svg/horse.svg";
+import "./animalShow.css";
 
 const svgMap = {
   bird,
@@ -24,8 +25,16 @@ const AnimalShow = ({ type }) => {
   return (
     <>
       <div onClick={handleClick}>
-        <img alt="animal" src={svgMap[type]} />
-        <img alt="heart" src={heart} style={{ width: 10 + 10 * clicks }} />
+        <img alt="animal" src={svgMap[type]} style={{ position: "absolute" }} />
+        <img
+          alt="heart"
+          src={heart}
+          style={{
+            width: 10 + 10 * clicks + "px",
+            zIndex: "1000",
+            position: "relative",
+          }}
+        />
       </div>
     </>
   );
