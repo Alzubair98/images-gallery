@@ -13,7 +13,7 @@ const App = () => {
         {" "}
         Add Animal
       </button>
-      <p className="ml-2">Animal to show</p>
+      <p className="ml-2">Animal to show {count}</p>
     </div>
   );
 };
