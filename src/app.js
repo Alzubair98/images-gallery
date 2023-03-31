@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "bulma/css/bulma.css";
 
 const App = () => {
+  const [count, setCount] = useState(0);
+
   const handleClick = () => {
-    console.log("button clicked");
+    setCount(count + 1);
   };
   return (
     <div>
