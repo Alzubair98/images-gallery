@@ -7,11 +7,21 @@ import gator from "./svg/gator.svg";
 import heart from "./svg/heart.svg";
 import horse from "./svg/horse.svg";
 
+const svgMap = {
+  bird,
+  cat,
+  cow,
+  dog,
+  gator,
+  horse,
+};
+
 const AnimalShow = ({ type }) => {
   return (
     <>
       <div>
-        <h1> {type}</h1>
+        {" "}
+        <img alt="animal" src={svgMap[type]} />
       </div>
     </>
   );
