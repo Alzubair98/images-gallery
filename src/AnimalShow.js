@@ -1,5 +1,13 @@
 import React from "react";
 
-const AimalShow = () => {};
+const AnimalShow = () => {
+  return (
+    <>
+      <div>
+        <h1> its an animal</h1>
+      </div>
+    </>
+  );
+};
 
-export default AimalShow;
+export default AnimalShow;

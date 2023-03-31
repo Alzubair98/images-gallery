@@ -1,19 +1,26 @@
 import React, { useState } from "react";
 import "bulma/css/bulma.css";
+import AnimalShow from "./AnimalShow";
+
+const getRandomAnimal = () => {
+  const animals = ["bird", "cat", "cow", "dog", "gator", "horse"];
+
+  return animals[Math.floor(Math.random() * animals.length)];
+};
 
 const App = () => {
-  const [count, setCount] = useState(0);
+  const [animals, setAnimals] = useState([]);
 
   const handleClick = () => {
-    setCount(count + 1);
+    setAnimals([...animals, getRandomAnimal()]);
   };
   return (
-    <div>
-      <button onClick={handleClick} className="button mt-4 ml-2">
+    <div className="pl-2 pt-2">
+      <button onClick={handleClick} className="button">
         {" "}
         Add Animal
       </button>
-      <p className="ml-2">Animal to show {count}</p>
+      <div>{animals}</div>
     </div>
   );
 };
