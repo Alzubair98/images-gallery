@@ -17,17 +17,12 @@ const App = () => {
   };
   return (
     <div className="pl-2 pt-2 app">
-      <button onClick={handleClick} className="button">
-        {" "}
-        Add Animal
-      </button>
-      {animals.map((animal, index) => {
-        return (
-          <div className="animal-list">
-            <AnimalShow type={animal} key={index} />
-          </div>
-        );
-      })}
+      <button onClick={handleClick}> Add Animal</button>
+      <div className="animal-list">
+        {animals.map((animal, index) => {
+          return <AnimalShow type={animal} key={index} />;
+        })}
+      </div>
     </div>
   );
 };
