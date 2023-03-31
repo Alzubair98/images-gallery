@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "bulma/css/bulma.css";
 import AnimalShow from "./AnimalShow";
+import "./app.css";
 
 const getRandomAnimal = () => {
   const animals = ["bird", "cat", "cow", "dog", "gator", "horse"];
@@ -15,13 +16,17 @@ const App = () => {
     setAnimals([...animals, getRandomAnimal()]);
   };
   return (
-    <div className="pl-2 pt-2">
+    <div className="pl-2 pt-2 app">
       <button onClick={handleClick} className="button">
         {" "}
         Add Animal
       </button>
       {animals.map((animal, index) => {
-        return <AnimalShow type={animal} key={index} />;
+        return (
+          <div className="animal-list">
+            <AnimalShow type={animal} key={index} />
+          </div>
+        );
       })}
     </div>
   );
