@@ -20,7 +20,9 @@ const App = () => {
         {" "}
         Add Animal
       </button>
-      <div>{animals}</div>
+      {animals.map((animal, index) => {
+        return <AnimalShow type={animal} key={index} />;
+      })}
     </div>
   );
 };

@@ -1,10 +1,10 @@
 import React from "react";
 
-const AnimalShow = () => {
+const AnimalShow = ({ type }) => {
   return (
     <>
       <div>
-        <h1> its an animal</h1>
+        <h1> {type}</h1>
       </div>
     </>
   );
