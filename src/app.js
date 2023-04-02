@@ -7,14 +7,16 @@ import "./app.css";
 import searchImages from "./api";
 
 const App = () => {
+  const [images, setImages] = useState([]);
+
   const handleSubmit = async (term) => {
     const result = await searchImages(term);
-    console.log(result);
+    setImages(result);
   };
   return (
     <div className="pl-2 pt-2 app">
       <SearchBar onSubmit={handleSubmit} />
-      <ImageList />
+      <ImageList images={images} />
     </div>
   );
 };

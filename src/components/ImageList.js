@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import "bulma/css/bulma.css";
 
-const ImageList = () => {
-  return <div>image list</div>;
+const ImageList = ({ images }) => {
+  return <div>imagesList: {images.length}</div>;
 };
 
 export default ImageList;
