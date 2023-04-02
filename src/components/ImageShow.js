@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import "bulma/css/bulma.css";
 
-const ImageShow = () => {
-  return <div>Image show</div>;
+const ImageShow = ({ image }) => {
+  return (
+    <div>
+      <h1>{image.id}</h1>
+    </div>
+  );
 };
 
 export default ImageShow;
