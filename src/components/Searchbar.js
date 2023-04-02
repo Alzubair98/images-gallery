@@ -7,6 +7,7 @@ const SearchBar = ({ onSubmit }) => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     onSubmit(term);
+    setTerm("");
   };
 
   const handleChange = (e) => {
@@ -15,7 +16,7 @@ const SearchBar = ({ onSubmit }) => {
   return (
     <div>
       <form onSubmit={handleFormSubmit}>
-        <input value={term} onChange={handleChange} />
+        <input name="search" value={term} onChange={handleChange} />
       </form>
     </div>
   );
