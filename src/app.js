@@ -7,8 +7,9 @@ import "./app.css";
 import searchImages from "./api";
 
 const App = () => {
-  const handleSubmit = (term) => {
-    searchImages(term);
+  const handleSubmit = async (term) => {
+    const result = await searchImages(term);
+    console.log(result);
   };
   return (
     <div className="pl-2 pt-2 app">
