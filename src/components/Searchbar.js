@@ -9,10 +9,6 @@ const SearchBar = (props) => {
   return (
     <div>
       <input />
-      <button onClick={handleClick} className="button">
-        {" "}
-        click me
-      </button>
     </div>
   );
 };

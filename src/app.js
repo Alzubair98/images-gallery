@@ -4,10 +4,11 @@ import SearchBar from "./components/Searchbar";
 import ImageList from "./components/ImageList";
 
 import "./app.css";
+import searchImages from "./api";
 
 const App = () => {
   const handleSubmit = (term) => {
-    console.log("do a search with", term);
+    searchImages(term);
   };
   return (
     <div className="pl-2 pt-2 app">
