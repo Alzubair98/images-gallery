@@ -12,7 +12,6 @@ const App = () => {
   };
   return (
     <div className="pl-2 pt-2 app">
-      <h1>hello</h1>
       <SearchBar onSubmit={handleSubmit} />
       <ImageList />
     </div>
