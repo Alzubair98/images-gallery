@@ -1,4 +1,3 @@
-import React from "react";
 import axios from "axios";
 
 const link = "https://api.unsplash.com/search/photos";
