@@ -5,8 +5,12 @@ import ImageShow from "./ImageShow";
 const ImageList = ({ images }) => {
   return (
     <div>
-      {images.map((image, index) => {
-        return <ImageShow key={index} image={image} />;
+      {images.map((image) => {
+        return (
+          <div key={image.id}>
+            <ImageShow image={image} />
+          </div>
+        );
       })}
     </div>
   );
