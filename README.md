@@ -4,7 +4,7 @@
 ![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
 ![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)
 
-# My Portfolio
+# Images gallery
 
 > A Website App built with React for a personal purpose. it is a an image gallery allows the users to serach for any kind on images.
 
