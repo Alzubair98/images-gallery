@@ -1,10 +1,12 @@
 .image-list{
-    columns: 6 200px;
-    column-gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 10px;
 }
 
 img{
-    width: 100%;
-    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 16rem;
+    height: 16rem;
+    margin: 0 10px 0 10px;
 }
