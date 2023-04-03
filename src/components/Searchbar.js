@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "bulma/css/bulma.css";
+import "./SearchBar.css";
 
 const SearchBar = ({ onSubmit }) => {
   const [term, setTerm] = useState("");
@@ -14,9 +15,15 @@ const SearchBar = ({ onSubmit }) => {
     setTerm(e.target.value);
   };
   return (
-    <div>
+    <div className="search-bar">
       <form onSubmit={handleFormSubmit}>
-        <input name="search" value={term} onChange={handleChange} />
+        <label>Search for some Images</label>
+        <input
+          className="search-bar"
+          name="search"
+          value={term}
+          onChange={handleChange}
+        />
       </form>
     </div>
   );
