@@ -1,10 +1,13 @@
 import React, { useState } from "react";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
 import "bulma/css/bulma.css";
 import SearchBar from "./components/Searchbar";
 import ImageList from "./components/ImageList";
 
 import "./app.css";
 import searchImages from "./api";
+import Details from "./components/DetailsPage";
+import Main from "./components/main";
 
 const App = () => {
   const [images, setImages] = useState([]);
@@ -15,8 +18,15 @@ const App = () => {
   };
   return (
     <div className="pl-2 pt-2 app">
-      <SearchBar onSubmit={handleSubmit} />
-      <ImageList images={images} />
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/"
+            element={<Main onSubmit={handleSubmit} images={images} />}
+          />
+          <Route path="details" element={<Details />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 };
