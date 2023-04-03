@@ -7,7 +7,7 @@ import ImageList from "./components/ImageList";
 import "./app.css";
 import searchImages from "./api";
 import Details from "./components/DetailsPage";
-import Main from "./components/main";
+import Main from "./components/Main";
 
 const App = () => {
   const [images, setImages] = useState([]);
