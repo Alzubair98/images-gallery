@@ -1,6 +1,7 @@
 .image-list{
     columns: 6 200px;
     column-gap: 10px;
+    margin-top: 10px;
 }
 
 img{
