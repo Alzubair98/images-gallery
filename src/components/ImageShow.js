@@ -6,7 +6,9 @@ const ImageShow = ({ image }) => {
   return (
     <div className="image-card">
       <img src={image.urls.small} alt={image.alt_description} />
-      <button className="glow-on-hover">DETAILS</button>
+      <a href="/details" className="glow-on-hover">
+        DETAILS
+      </a>
     </div>
   );
 };
