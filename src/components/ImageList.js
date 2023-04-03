@@ -1,10 +1,11 @@
 import React from "react";
 import "bulma/css/bulma.css";
 import ImageShow from "./ImageShow";
+import "./ImageList.css";
 
 const ImageList = ({ images }) => {
   return (
-    <div>
+    <div className="image-list">
       {images.map((image) => {
         return (
           <div key={image.id}>
