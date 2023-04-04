@@ -11,6 +11,7 @@ import Main from "./components/Main";
 
 const App = () => {
   const [images, setImages] = useState([]);
+  const [term, setTerm] = useState([]);
 
   const handleSubmit = async (term) => {
     const result = await searchImages(term);
