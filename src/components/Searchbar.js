@@ -3,7 +3,7 @@ import "bulma/css/bulma.css";
 import "./SearchBar.css";
 import useSearchContext from "../hooks/use_search_context";
 
-const SearchBar = ({ onSubmit }) => {
+const SearchBar = () => {
   const { searchImages } = useSearchContext();
 
   const [term, setTerm] = useState("");
