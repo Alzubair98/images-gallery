@@ -7,13 +7,6 @@ import Details from "./components/DetailsPage";
 import Main from "./components/Main";
 
 const App = () => {
-  const [images, setImages] = useState([]);
-
-  const handleSubmit = async (term) => {
-    const result = await searchImages(term);
-    setImages(result);
-  };
-
   return (
     <div className="pl-2 pt-2 app">
       <BrowserRouter>
