@@ -3,7 +3,7 @@ import { Route, Routes, BrowserRouter } from "react-router-dom";
 import "bulma/css/bulma.css";
 import "./app.css";
 import Details from "./components/DetailsPage";
-import Main from "./components/Main";
+import Main from "./components/main";
 
 const App = () => {
   const [id, setId] = useState(0);
