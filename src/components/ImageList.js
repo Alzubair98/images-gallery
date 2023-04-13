@@ -2,8 +2,10 @@ import React from "react";
 import "bulma/css/bulma.css";
 import ImageShow from "./ImageShow";
 import "./ImageList.css";
+import useSearchContext from "../hooks/use_search_context";
 
-const ImageList = ({ images }) => {
+const ImageList = () => {
+  const { images } = useSearchContext();
   return (
     <div className="image-list">
       {images.map((image) => {

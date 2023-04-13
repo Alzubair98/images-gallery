@@ -18,10 +18,7 @@ const App = () => {
     <div className="pl-2 pt-2 app">
       <BrowserRouter>
         <Routes>
-          <Route
-            path="/"
-            element={<Main onSubmit={handleSubmit} images={images} />}
-          />
+          <Route path="/" element={<Main onSubmit={handleSubmit} />} />
           <Route path="details" element={<Details />} />
         </Routes>
       </BrowserRouter>

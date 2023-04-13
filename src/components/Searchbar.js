@@ -1,8 +1,7 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import "bulma/css/bulma.css";
 import "./SearchBar.css";
 import useSearchContext from "../hooks/use_search_context";
-import searchContext from "../context/search";
 
 const SearchBar = ({ onSubmit }) => {
   const { searchImages } = useSearchContext();
