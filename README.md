@@ -1,4 +1,3 @@
-
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
@@ -10,7 +9,7 @@
 
 # Live Demo
 
-[LINK DEMO](https://master--golden-moonbeam-e14baa.netlify.app/)
+[LINK DEMO](https://whimsical-phoenix-dd6566.netlify.app/)
 
 ## Built With :hammer_and_wrench:
 
