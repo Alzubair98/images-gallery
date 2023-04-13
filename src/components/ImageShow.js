@@ -8,6 +8,7 @@ const ImageShow = ({ image, handleId }) => {
     <div className="image-card">
       <img src={image.urls.small} alt={image.alt_description} />
 
+
       <NavLink
         className="glow-on-hover"
         id={image.id}
@@ -18,6 +19,8 @@ const ImageShow = ({ image, handleId }) => {
       >
         DETAILS
       </NavLink>
+
+
     </div>
   );
 };
