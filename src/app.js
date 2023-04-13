@@ -10,7 +10,6 @@ const App = () => {
 
   const handleId = (id) => {
     setId(id);
-    console.log(id);
   };
 
   return (
